@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #dfe0e6;
+    /* background: #f3f5fc; */
+}
+
+/* =============  Header Section ================= */
+.header__container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: auto;
+    padding: 20px 0px;
+    color: #0a3871;
+}
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+.header__social {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: inherit;
+    padding: 20px;
+    /* background: #dfe0e6; */
+    background: #f3f5fc;
+}
+
+/* =============  left Section  ================= */
+.left{
+    width: 60%;
+    height: 500px;
+}
+
+/* =============  textarea style  ================= */
+.left__input {
+    display: block;
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    padding: 10px;
+    font-size: 30px;
+    text-align: left;
+    background: #fff;
+    color: #0a3871;
+    border: none;
+    border-radius: 30px;
+    resize: none;
+}
+.left__input:focus {
+    outline: none;
+}
+.left__text {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    font-size: smaller;
+    color: #696a6e;
+}
+
+/* =============  buttons container  ================= */
+.left__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* =============  general styles for buttons contain btn class  ================= */
+.btn {
+    width: auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 0.25px solid #0a3871;
+    outline: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/* =============  Stulys for buttons  ================= */
+#btn_encrypt{
+    background: #0a3871;
+    color: #f3f5fc;
+}
+#btn_encrypt:hover{
+    background: #d8dfe8;
+    color: #000;
+}
+#btn_decrypt, #btn_copy{
+    background: #d8dfe8;
+    color: #000;
+}
+#btn_decrypt:hover, #btn_copy:hover{
+    background: #0a3871;
+    color: #f3f5fc;
+}
+
+/* =============  rigth Section  ================= */
+.rigth {
+    width: 40%;
+    height: 500px;
+}
+.rigth__image {
+    width: 90%;
+    height: 330px;
+    margin: auto;
+    padding: 10px;
+    font-size: 30px;
+    text-align: left;
+    background: #fff;
+    border-radius: 30px;
+}
+.rigth__image image {
+    width: auto;
+}
+.rigth__text {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 30px;
+    color: #0a3871;
+    text-align: center;
+}
+.rigth__text p:first-child {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.rigth__text p:last-child {
+    font-size: 20px;
+    font-weight: lighter;
+}
+.rigth__result {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    padding: 10px;
+    font-size: 30px;
+    text-align: left;
+    background: #fff;
+    color: #0a3871;
+    border-radius: 30px;
+}
+.rigth__button {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 35px;
+}
+
+/* =============  this style is active with JavaScript  ================= */
+.dnone {
+    display: none;
+}
+
+/* =============  footer styles  ================= */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    color: #03152b;
+    font-size: 20px;
+    font-weight: bolder;
+}
