@@ -22,7 +22,7 @@ let btnCopy = document.querySelector('#btn_copy');
 function removeCharacter(text){
     return text.normalize('NFD')
         .replace(/[\u0300-\u0301]/g, '')
-        .replace(/[&/\#^+()$~%.,;_'":*¿?¿!|\[\]<>\{\`\-}]/g, '');
+        .replace(/[&/\#^+()$~%.,;_'":*¿?¿|\[\]<>\{\`\-}]/g, '');
 }
 
 // función que agrega o remueve una clase para ocultar o mostrar los resultados
