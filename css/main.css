@@ -2,61 +2,43 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 body {
     background: #dfe0e6;
-    /* background: #f3f5fc; */
 }
 
 /* =============  Header Section ================= */
-.header__container {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    margin: auto;
-    padding: 20px 0px;
+header {
+    padding: 30px 0px;
+    margin-bottom: 1rem;
+    text-align: center;
     color: #0a3871;
 }
-.logo {
-    font-size: 30px;
-    font-weight: bold;
-}
-.header__social {
-    width: 20%;
-    display: flex;
-    justify-content: flex-end;
-    /* align-items: center; */
+header h1 {
+    font-size: 3rem;
 }
 .container {
-    width: 90%;
-    margin: auto;
-}
-main {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    height: inherit;
-    padding: 20px;
-    /* background: #dfe0e6; */
-    background: #f3f5fc;
+    gap: 4rem;
+    width: 95%;
+    margin: auto;
 }
 
 /* =============  left Section  ================= */
 .left{
     width: 60%;
-    height: 500px;
 }
 
 /* =============  textarea style  ================= */
 .left__input {
     display: block;
-    width: 90%;
-    height: 400px;
-    margin: auto;
-    padding: 10px;
+    width: 100%;
+    min-height: 450px;
+    padding: 20px;
     font-size: 30px;
-    text-align: left;
+    text-align: center;
     background: #fff;
     color: #0a3871;
     border: none;
@@ -67,8 +49,7 @@ main {
     outline: none;
 }
 .left__text {
-    width: 90%;
-    margin: auto;
+    width: 100%;
     margin-top: 10px;
     font-size: smaller;
     color: #696a6e;
@@ -78,19 +59,17 @@ main {
 .left__buttons {
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    margin: auto;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 /* =============  general styles for buttons contain btn class  ================= */
 .btn {
-    width: auto;
+    /* width: auto; */
     padding: 5px 10px;
     border-radius: 10px;
     border: 0.25px solid #0a3871;
     outline: none;
-    font-size: 17px;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 
@@ -115,47 +94,39 @@ main {
 /* =============  rigth Section  ================= */
 .rigth {
     width: 40%;
-    height: 500px;
 }
 .rigth__image {
-    width: 90%;
-    height: 330px;
-    margin: auto;
-    padding: 10px;
-    font-size: 30px;
-    text-align: left;
+    width: 100%;
+    min-height: 450px;
+    padding: 20px;
     background: #fff;
     border-radius: 30px;
+    text-align: center;
 }
-.rigth__image image {
-    width: auto;
+.rigth__image img {
+    max-width: 100%;
 }
+
 .rigth__text {
-    width: 90%;
-    margin: auto;
+    width: 100%;
     margin-top: 30px;
     padding: 10px;
     background: #fff;
     border-radius: 30px;
     color: #0a3871;
     text-align: center;
+    font-size: 1.3rem;
 }
 .rigth__text p:first-child {
-    margin-bottom: 20px;
-    font-size: 20px;
     font-weight: bolder;
 }
-.rigth__text p:last-child {
-    font-size: 20px;
-    font-weight: lighter;
-}
+
 .rigth__result {
-    width: 90%;
-    height: 400px;
-    margin: auto;
-    padding: 10px;
+    width: 100%;
+    min-height: 450px;
+    padding: 20px;
     font-size: 30px;
-    text-align: left;
+    text-align: center;
     background: #fff;
     color: #0a3871;
     border-radius: 30px;
@@ -163,9 +134,7 @@ main {
 .rigth__button {
     display: flex;
     justify-content: center;
-    width: 90%;
-    margin: auto;
-    margin-top: 35px;
+    margin-top: 45px;
 }
 
 /* =============  this style is active with JavaScript  ================= */
@@ -175,13 +144,69 @@ main {
 
 /* =============  footer styles  ================= */
 footer {
+    margin-top: 4rem;
+    padding-bottom: 0.5rem;
+    color: #03152b;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.footer__social { 
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 40px;
-    margin-top: 10px;
-    color: #03152b;
-    font-size: 20px;
-    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+/* Reponsive Design */
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    .left__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        /* justify-content: space-between; */
+        margin-top: 20px;
+    }
+    .rigth__image img {
+        display: none;
+    }
+    .container {
+        width: 95%;
+        margin: auto;
+        flex-direction: column;
+    }
+    .left,  .rigth, .rigth__result {
+        width: 100%;
+    }
+    .rigth__image {
+        min-height: auto;
+    }
+    .rigth__result {
+        min-height: 200px;
+    }
+    .rigth__text {
+        margin-top: 0;
+    }
+    .rigth__button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dnone {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .left{
+        width: 50%;
+    }
+    .rigth{
+        width: 50%;
+    }
 }
